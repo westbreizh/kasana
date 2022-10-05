@@ -10,7 +10,6 @@ export default function About() {
   const altBannerImage = "photo de montagnes"
   const textBanner = ""
 
- 
   return ( 
 
     <div>
@@ -23,8 +22,8 @@ export default function About() {
 
         <main >
 
-          { collapseData.map ((data, index) => 
-            <Collapse key={data.title} title={data.title} text={data.text} />
+          { collapseData.map ((data) => 
+            <Collapse title={data.title} text={data.text} />
           )}
 
         </main>

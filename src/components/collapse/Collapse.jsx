@@ -1,36 +1,35 @@
-import { useState } from 'react';
+import { useState } from 'react'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
-
-//import './collapse.css';
-
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import Box from '@mui/material/Box'
 
 export default function Collapse(props) {
 
-    const {label, text} = props
-    const [isOpen, setIsOpen] = useState(false);
+  const {title, text} = props
+  const [isOpen, setIsOpen] = useState(false)
 
     return (
 
         <div className="collapse_container">
 
-          <div className="button_container" onClick={ setIsOpen(!isOpen)}>
+            <div className="button_container" onClick= {() => {setIsOpen(!isOpen)}}   >
 
             <div className="collapse_button">
-              <p>{label}</p>
+                <p>{title}</p>
             </div>
 
-            {isOpen ? (
-              <i className="fa-solid fa-chevron-up"></i>
-            ) : (
-              <i className="fa-solid fa-chevron-down"></i>
-            )}
+            {
+            isOpen ? <ArrowDropDownIcon/>
+            : <ArrowDropUpIcon />
+            }
             
-          </div>
+            </div>
 
-          {isOpen && <div className="collapse_content"> {text} </div>}
+            {isOpen && <div className="collapse_content"> {text} </div>}
 
         </div>
-      );
-    };
+                
+   )
+};
     
 
