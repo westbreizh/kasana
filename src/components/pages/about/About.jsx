@@ -17,14 +17,14 @@ export default function About() {
 
       <Header />
 
-      <body >
+      <body className="body" >
 
         <Banner imageBanner={imageBanner} altBannerImage={altBannerImage} textBanner= {textBanner} />
 
         <main >
 
           { collapseData.map ((data, index) => 
-            <Collapse key={data.title} title={data.title} text={data.text} />
+            <Collapse key={index} title={data.title} text={data.text} />
           )}
 
         </main>

@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
 import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
-import Box from '@mui/material/Box'
+import "./collapse.css"
+
 
 export default function Collapse(props) {
 
@@ -15,17 +16,17 @@ export default function Collapse(props) {
             <div className="button_container" onClick= {() => {setIsOpen(!isOpen)}}   >
 
             <div className="collapse_button">
-                <p>{title}</p>
+                <p className='collapse_label'>{title}</p>
             </div>
 
             {
-            isOpen ? <ArrowDropDownIcon/>
-            : <ArrowDropUpIcon />
+            isOpen ? <ArrowDropUpIcon className='collapse-arrow'/>
+            : <ArrowDropDownIcon className='collapse-arrow'/>
             }
             
             </div>
 
-            {isOpen && <div className="collapse_content"> {text} </div>}
+            {isOpen && <div className="collapse_text"> {text} </div>}
 
         </div>
                 

@@ -1,8 +1,41 @@
 .collapse_container{
-    width: 1023px;
+    width: 82%;
     margin : auto;
+    margin-top: 31px ;
+}
+
+.button_container{
+    position: relative;
     height: 47px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FF6060;
+    border-radius: 5px;
+    margin-bottom: 31px ;
+}
 
+.collapse_label{
+    font-size: 24px;
+    line-height: 142.6%;
+    color: #FFFFFF;
+    margin-left: 14%;
+}
 
+.collapse-arrow{
+    background: #FF6060;
+    color: #FFFFFF;
+    margin-right: 4%;
+    font-size: 35px;
+}
 
+.collapse_text{
+font-weight: 400;
+font-size: 24px;
+line-height: 142.6%;
+color: #FF6060;
+margin-left: 1%;
+margin-right: 3%;
+margin-bottom: 36px;
 }
