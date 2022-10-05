@@ -4,7 +4,9 @@ import "./banner.css"
 
 export default function Banner(props) {
 
-    const {imageBanner,altImageBanner, textBanner} = props
+    let {imageBanner, altImageBanner, textBanner} = props
+
+
 
         return (    
 
