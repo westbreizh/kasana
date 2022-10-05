@@ -1,0 +1,32 @@
+.footer{
+
+    height: 209px;
+    margin: auto;
+    background-color: black;
+}
+
+.logo_container{
+    width:122px;
+    margin: auto;
+    padding-top: 62px;
+}
+
+.texte_copiright{
+    color: white;
+    text-align: center;
+    margin-top: 31px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+
+@media screen and (max-width: 576px) {
+
+    
+    .texte_copiright{
+        font-size: 14px;
+    }
+}
