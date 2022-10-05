@@ -1,0 +1,33 @@
+.body{
+    width: 86%;
+     margin: auto;
+    }
+    
+    .box_list_housings {
+        background-color: #f7f7f7;
+        padding:50px ;
+        margin: 40px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        border-radius: 10px;
+    }
+    .box_list_housings::after {
+        content: "";
+        flex: 0 0 30%;
+       
+    
+      }
+    
+    /* -------------------  Responsive ----------------------*/
+    
+    /* --- Breakpoint 768px ---*/
+    
+    @media screen and (max-width: 576px) {
+    
+    
+        .body{
+            width: 90%;
+             margin: auto;
+            }
+    }

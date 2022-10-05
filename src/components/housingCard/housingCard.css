@@ -1,0 +1,116 @@
+@keyframes showHousingCard {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+  }
+
+.housing_box {
+    position: relative;
+    width: 30%;
+    border-radius: 10px;
+    margin-bottom: 45px;
+    transition: 0.3s;
+    animation: 1s ease-in-out 0s 1 showHousingCard;
+}
+
+.housing_box::after {
+    content: '';
+    display: block;
+    padding-bottom: 100%;
+  }
+
+  .housing_box:hover {
+    transform: scale(1.03);
+}
+
+.housing_img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.box_linear_gradient {
+    background: linear-gradient(180deg, #ffffff00 0%, #00000080 100%);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+}
+
+.housing_title {
+    margin: 5%;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    position: absolute;
+    left: 5.88%;
+    right: 5.88%;
+    top: 78.82%;
+    bottom: 5.88%;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 18px;
+    line-height: 142.6%;
+}
+
+@media screen and (max-width: 576px) {
+    .housing_box {
+        position: relative;
+        width: 30%;
+        border-radius: 10px;
+        margin-bottom: 45px;
+        transition: 0.3s;
+        animation: 1s ease-in-out 0s 1 showHousingCard;
+    }
+    
+    .housing_box::after {
+        content: '';
+        display: block;
+        padding-bottom: 100%;
+      }
+    
+      .housing_box:hover {
+        transform: scale(1.03);
+    }
+    
+    .housing_img {
+        position: absolute;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    
+    .box_linear_gradient {
+        background: linear-gradient(180deg, #ffffff00 0%, #00000080 100%);
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: 10px;
+    }
+    
+    .housing_title {
+        margin: 5%;
+        margin-top: 0px;
+        margin-bottom: 5px;
+        position: absolute;
+        left: 5.88%;
+        right: 5.88%;
+        top: 78.82%;
+        bottom: 5.88%;
+        color: white;
+        font-size: 18px;
+        display: flex;
+        align-items: flex-end;
+        font-size: 18px;
+        line-height: 142.6%;
+    }
+
+
+}
