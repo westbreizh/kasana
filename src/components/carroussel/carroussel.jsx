@@ -4,16 +4,23 @@ import rightArrow from "../../assets/vector-left.png"
 
 
 
-export default function Carroussel(){
+export default function Carroussel(props){
+
+const [index, setIndex] = useState(0)
+const arrayPictures= props.pictures
+const picture = arrayPictures[index]
 
 
-  
+
+
 
     return (
 
-    <h1>hello</h1>
-
+    <div>
     
+    <img src={picture} alt="différentes vues du logement" className='carroussel_picture'/>
+
+    </div>
     )
     
 }
