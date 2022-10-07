@@ -1,0 +1,84 @@
+.carroussel_container{
+    position: relative;
+    height: 415px;
+    margin-top: 25px ;
+    border-radius: 25px;
+}
+
+.carroussel_picture{
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.button_forward{
+    position: absolute;
+    left: 83%;
+    top: 40%;
+    color: white;
+    width: 100px ;
+    height: 150px ;
+}
+
+
+.button_backward{
+    position: absolute;
+    right: 83%;
+    top: 40%;
+    color: white;
+    font-size: 100px;
+}
+
+.button_forward :hover, .button_backward:ho{
+    cursor: pointer;
+}
+
+
+.caroussel_index{
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 85%;
+    color: white;
+    font-size: 20px;
+}
+
+/* -------------------  Responsive ----------------------*/
+
+
+
+@media screen and (max-width: 576px) {
+
+    .carroussel_container{
+
+        height: 255 px;
+        margin-top: 30px ;
+        border-radius: 10px;
+    }
+    
+
+    
+    .button_forward{
+        position: absolute;
+        left: 80%;
+        top: 40%;
+        color: white;
+    }
+    
+    .button_backward{
+        position: absolute;
+        right: 80%;
+        top: 40%;
+        color: white;
+        font-size: 100px;
+    }
+    
+    .button_forward :hover, .button_backward:ho{
+        cursor: pointer;
+    }
+    
+
+}

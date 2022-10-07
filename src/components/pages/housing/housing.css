@@ -1,0 +1,23 @@
+.body{
+    width: 86%;
+     margin: auto;
+    }
+
+
+
+
+
+
+  /* -------------------  Responsive ----------------------*/
+  
+  
+    @media screen and (max-width: 576px) {
+
+        .body{
+            width: 90%;
+                margin: auto;
+            }
+    
+
+    
+    }

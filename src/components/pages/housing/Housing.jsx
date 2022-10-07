@@ -32,9 +32,11 @@ export default function Housing() {
       <Header />
 
       <body className="body">
-      {housingData.pictures &&
-        <Carroussel pictures={housingData.pictures}/>
-      }
+
+        {housingData.pictures &&
+          <Carroussel pictures={housingData.pictures}/>
+        }
+        
       </body>
 
       <Footer />
