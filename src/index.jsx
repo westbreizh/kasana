@@ -6,7 +6,6 @@ import Housing from "./components/pages/housing/Housing"
 import About from "./components/pages/about/About"
 import ErrorPage from "./components/pages/error-page/Error-page"
 
-
 const router = createBrowserRouter([
   {
     path: "/",

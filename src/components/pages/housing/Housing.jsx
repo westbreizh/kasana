@@ -4,6 +4,7 @@ import Header from "../../header/Header"
 import Footer from "../../footer/Footer"
 import Carroussel from "../../carroussel/carroussel"
 import ListTags from '../../listTags/listTags';
+import Rating from '../../rating/rating'
 
 export default function Housing() {
 
@@ -24,7 +25,6 @@ export default function Housing() {
         .catch((error) => console.log(error));
     }, [id])
 
-   // console.log(housingData)
 
   return ( 
 
@@ -57,9 +57,9 @@ export default function Housing() {
           <ListTags tags={housingData.tags}/>
         }
 
-        
-
-
+        {housingData.rating &&
+          <Rating ratingNumber={housingData.rating}/>
+        }
 
 
       </body>
