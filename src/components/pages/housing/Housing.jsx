@@ -5,6 +5,7 @@ import Footer from "../../footer/Footer"
 import Carroussel from "../../carroussel/carroussel"
 import ListTags from '../../listTags/listTags';
 import Rating from '../../rating/rating'
+import ProfilHost from '../../profilHost/profilHost';
 
 export default function Housing() {
 
@@ -32,7 +33,7 @@ export default function Housing() {
 
       <Header />
 
-      <body className="body">
+      <div className="body">
 
         {housingData.pictures &&
           <Carroussel pictures={housingData.pictures}/>
@@ -61,8 +62,11 @@ export default function Housing() {
           <Rating ratingNumber={housingData.rating}/>
         }
 
+        {housingData.host &&
+          <ProfilHost name={housingData.host.name} picture={housingData.host.picture}/>
+        }
 
-      </body>
+      </div>
 
       <Footer />
       

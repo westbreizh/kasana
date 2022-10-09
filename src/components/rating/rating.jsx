@@ -1,24 +1,25 @@
-import StarBorderIcon from '@mui/icons-material/StarBorder';
 import StarIcon from '@mui/icons-material/Star';
+import "./rating.css"
+
 
 export default function rating (props){
     const ratingNumber= props.ratingNumber
-    const fullStarNumberArray=[]
-    const emptyStarNumberArray=[]
+    const colorStarNumberArray=[]
+    const greyStarNumberArray=[]
 
     for (let i=0; i< ratingNumber; i++){
-        fullStarNumberArray.push(i)
+        colorStarNumberArray.push(i)
     }
     for (let i=0; i< (5-ratingNumber); i++){
-        emptyStarNumberArray.push(i)
+        greyStarNumberArray.push(i)
     }
 
     return(
         <div>
-            {fullStarNumberArray.map((index) => (
-                <StarIcon key={index} />))}
-            {emptyStarNumberArray.map((index) => (
-                <StarBorderIcon key={index}  />))}           
+            {colorStarNumberArray.map((index) => (
+                <StarIcon key={index} className="colorStar" />))}
+            {greyStarNumberArray.map((index) => (
+                <StarIcon key={index} className="greyStar"  />))}           
         </div>
     )
 }
