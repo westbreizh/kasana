@@ -3,6 +3,37 @@
      margin: auto;
     }
 
+.info-tags-rating-hostProfil_contenair{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+.infos_contenair{
+    margin-top: 30px;
+}
+
+.housing_title_image{
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+
+.housing_location{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    display: flex;
+    align-items: flex-end;
+    color: #FF6060;
+}
+
+.tags_contenair{}
+
+
+
 
 
 
@@ -17,7 +48,24 @@
             width: 90%;
                 margin: auto;
             }
-    
-
-    
+            .info-tags-rating-hostProfil_contenair{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: baseline;
+                
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+            .infos_contenair{
+                margin-top: 15px;
+            }
+            
+            .housing_title_image{
+                font-size: 18px;
+            }
+            
+            .housing_location{
+                font-size: 14px;
+            }
     }

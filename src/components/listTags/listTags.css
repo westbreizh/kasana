@@ -1,3 +1,31 @@
 .listTags_contenair{
     display: flex;
+    margin-top: 23px;
 }
+
+.tag{
+    width:115px;
+    height: 25px;
+    background: #FF6060;
+    border-radius: 10px;
+    color: white;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+  /* -------------------  Responsive ----------------------*/
+  
+  
+  @media screen and (max-width: 576px) {
+    .listTags_contenair{
+        margin-top: 12px;
+    }
+    
+    .tag{
+        width:84px;
+        height: 18px;
+        border-radius: 5px;
+    }
+  }

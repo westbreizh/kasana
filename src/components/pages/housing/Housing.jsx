@@ -6,6 +6,8 @@ import Carroussel from "../../carroussel/carroussel"
 import ListTags from '../../listTags/listTags';
 import Rating from '../../rating/rating'
 import ProfilHost from '../../profilHost/profilHost';
+import Collapse from '../../collapse/Collapse';
+import "./housing.css"
 
 export default function Housing() {
 
@@ -39,31 +41,39 @@ export default function Housing() {
           <Carroussel pictures={housingData.pictures}/>
         }
 
-        <div className='housing_infotext'>
-          <h1 className='housing_tittle'> {housingData.title}</h1>
-          <h3 className='housing_location'> {housingData.location}</h3>
-        </div>
+        <div className='info-tags-rating-hostProfil_contenair'>
 
-        {/*
-        <div className='housing_tags'>
-          { housingData.tags &&
-            (housingData.tags).foreach(item =>
-              <div> {item}</div>
-              )
+          <div className='info-tags_contenair'>
+
+            <div className='infos_contenair'>
+              <div className='housing_title_image'> {housingData.title}</div>
+              <div className='housing_location'> {housingData.location}</div>
+            </div>
+
+            {housingData.tags &&
+              <ListTags tags={housingData.tags} className="tags_contenair"/>
             }
+
+          </div>
+
+          <div className='hostProfil-rating_contenair'>
+
+          {housingData.host &&
+              <ProfilHost name={housingData.host.name} picture={housingData.host.picture}/>
+            }
+
+            {housingData.rating &&
+              <Rating ratingNumber={housingData.rating}/>
+            }
+
+          </div>
         </div>
-          */}
 
-        {housingData.tags &&
-          <ListTags tags={housingData.tags}/>
-        }
-
-        {housingData.rating &&
-          <Rating ratingNumber={housingData.rating}/>
-        }
-
-        {housingData.host &&
-          <ProfilHost name={housingData.host.name} picture={housingData.host.picture}/>
+        {housingData.equipments &&
+          <div className='collapse_contenair'> 
+            <Collapse title="Description" text={housingData.description} />
+            <Collapse title="Equipements" text={housingData.equipments} />
+          </div>
         }
 
       </div>

@@ -1,12 +1,14 @@
-import Avatar from '@mui/material/Avatar';
+import "./profilHost.css"
 
 export default function ProfilHost(props){
 
     const{name, picture}=props
 return(
-    <div>
-        <div>{name}</div>
-        <Avatar src={picture} alt= {name}/>
+    <div className='profilHost_contenair'>
+        <div className='profilHost_name'>{name}</div>
+        <div clasName='profilHost-image_contenair'>
+          <img  src={picture} alt= {name} />
+        </div>
     </div>
 )
 
