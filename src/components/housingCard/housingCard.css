@@ -1,15 +1,9 @@
-@keyframes showHousingCard {
-    0%   { opacity: 0; }
-    100% { opacity: 1; }
-  }
-
 .housing_box {
     position: relative;
     width: 30%;
     border-radius: 10px;
     margin-bottom: 45px;
     transition: 0.3s;
-    animation: 0.5s ease-in-out 0s 1 showHousingCard;
 }
 
 .housing_box::after {

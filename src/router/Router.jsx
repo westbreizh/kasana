@@ -1,5 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from '../components/header/Header'
+import Footer from '../components/footer/Footer'
 import Home from "../components/pages/home/Home"
 import Housing from "../components/pages/housing/Housing"
 import About from "../components/pages/about/About"
@@ -11,12 +13,14 @@ export default function Router() {
   return (
 
     <BrowserRouter> 
-        <Routes>
-          <Route path='/' element={<Home />}  /> 
-          <Route path='/housings/:id' element={<Housing />} /> 
-          <Route path='/about' element={<About />} />
-          <Route path='/*' element={<ErrorPage />} />
-        </Routes>
+      <Header />
+          <Routes>
+            <Route path='/home' element={<Home />}  /> 
+            <Route path='/housings/:id' element={<Housing />} /> 
+            <Route path='/about' element={<About />} />
+            <Route path='/*' element={<ErrorPage />} />
+          </Routes>
+        <Footer />
     </BrowserRouter>
 
   )

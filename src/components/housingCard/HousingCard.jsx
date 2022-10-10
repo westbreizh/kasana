@@ -5,7 +5,7 @@ import "./housingCard.css"
 export default function HousingCard(props) {
 
     const housingData = props.housingData
-    const path = `housings/${housingData.id}`
+    const path = `/housings/${housingData.id}`
     const imgSrc = housingData.cover;
     const title = housingData.title;
 

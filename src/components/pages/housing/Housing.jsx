@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Header from "../../header/Header"
-import Footer from "../../footer/Footer"
 import Carroussel from "../../carroussel/carroussel"
 import ListTags from '../../listTags/listTags';
 import Rating from '../../rating/rating'
@@ -28,14 +26,10 @@ export default function Housing() {
         .catch((error) => console.log(error));
     }, [id])
 
-
+  
   return ( 
 
-    <div>
-
-      <Header />
-
-      <div className="body">
+    <div className="body">
 
         {housingData.pictures &&
           <Carroussel pictures={housingData.pictures}/>
@@ -69,16 +63,12 @@ export default function Housing() {
           </div>
         </div>
 
-        {housingData.equipments &&
+        {housingData.equipments&&
           <div className='collapses_contenair'> 
             <Collapse title="Description" text={housingData.description} />
             <Collapse title="Equipements" text={housingData.equipments} className="housing_collapse"/>
           </div>
         }
-
-      </div>
-
-      <Footer />
       
     </div>
   )

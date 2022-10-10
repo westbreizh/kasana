@@ -23,6 +23,7 @@
 
 .collapse_contenair{
     display: flex;
+    justify-content: space-between;
 }
 
   /* -------------------  Responsive ----------------------*/

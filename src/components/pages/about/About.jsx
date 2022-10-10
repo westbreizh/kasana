@@ -1,5 +1,3 @@
-import Header from "../../header/Header";
-import Footer from "../../footer/Footer"
 import Collapse from "../../collapse/Collapse";
 import Banner from "../../banner/Banner";
 import imageBanner from "../../../assets/banner_img_about.png"
@@ -7,7 +5,6 @@ import imageBannerMobile from "../../../assets/banner_img_about_mobile.png"
 import collapseData from "../../collapse/collapseData";
 
 export default function About() {
-
 
   const altBannerImage = "photo de montagnes"
   const textBanner = ""
@@ -18,26 +15,19 @@ export default function About() {
 
   return ( 
 
-    <div>
+    <div className="body" >
 
-      <Header />
+      <Banner imageBanner={imageBanner}  altBannerImage={altBannerImage} textBanner= {textBanner} />
 
-      <div className="body" >
+      <main >
 
-        <Banner imageBanner={imageBanner}  altBannerImage={altBannerImage} textBanner= {textBanner} />
+        { collapseData.map ((data, index) => 
+          <Collapse key={index} title={data.title} text={data.text} />
+        )}
 
-        <main >
-
-          { collapseData.map ((data, index) => 
-            <Collapse key={index} title={data.title} text={data.text} />
-          )}
-
-        </main>
-
-      </div>
-
-      <Footer />
+      </main>
 
     </div>
+
   );
 }

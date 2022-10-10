@@ -1,5 +1,4 @@
 import { NavLink } from "react-router-dom";
-import Header from "../../header/Header";
 import "./error-pages.css"
 
 export default function ErrorPage() {
@@ -7,10 +6,6 @@ export default function ErrorPage() {
 
   return (
 
-
-    <div>
-
-      <Header />
 
       <div className="error_container">
 
@@ -27,8 +22,6 @@ export default function ErrorPage() {
           </NavLink>
           
       </div>
-
-    </div>
 
   );
 };

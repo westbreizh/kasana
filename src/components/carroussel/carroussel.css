@@ -31,7 +31,7 @@
     font-size: 100px;
 }
 
-.button_forward :hover, .button_backward:ho{
+.button_forward :hover, .button_backward:hover{
     cursor: pointer;
 }
 
@@ -79,6 +79,8 @@
     .button_forward :hover, .button_backward:ho{
         cursor: pointer;
     }
+    
+
     
 
 }
