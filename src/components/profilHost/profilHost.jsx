@@ -6,9 +6,7 @@ export default function ProfilHost(props){
 return(
     <div className='profilHost_contenair'>
         <div className='profilHost_name'>{name}</div>
-        <div clasName='profilHost-image_contenair'>
-          <img  src={picture} alt= {name} />
-        </div>
+        <img  src={picture} alt= {name} />
     </div>
 )
 

@@ -22,7 +22,7 @@ export default function About() {
 
       <Header />
 
-      <body className="body" >
+      <div className="body" >
 
         <Banner imageBanner={imageBanner}  altBannerImage={altBannerImage} textBanner= {textBanner} />
 
@@ -34,7 +34,7 @@ export default function About() {
 
         </main>
 
-      </body>
+      </div>
 
       <Footer />
 
