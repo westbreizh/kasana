@@ -70,9 +70,9 @@ export default function Housing() {
         </div>
 
         {housingData.equipments &&
-          <div className='collapse_contenair'> 
+          <div className='collapses_contenair'> 
             <Collapse title="Description" text={housingData.description} />
-            <Collapse title="Equipements" text={housingData.equipments} />
+            <Collapse title="Equipements" text={housingData.equipments} className="housing_collapse"/>
           </div>
         }
 

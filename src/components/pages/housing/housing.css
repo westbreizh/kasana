@@ -6,7 +6,7 @@
 .info-tags-rating-hostProfil_contenair{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: baseline;
 }
 
 
@@ -30,9 +30,20 @@
     color: #FF6060;
 }
 
-.tags_contenair{}
+
+.hostProfil-rating_contenair{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:120px
+}
 
 
+.collapses_contenair{
+    display: flex;
+   flex-direction: row;
+   gap: 75px;
+}
 
 
 
