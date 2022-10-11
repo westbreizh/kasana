@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
     height: 68px;
-    width : 86%;
+    width : 88%;
     margin: auto;
     margin-top: 40px;
 }
@@ -23,7 +23,6 @@ ul{
     display:flex;
     justify-content: space-between;
     list-style-type: none;
-
     margin: 0;
 }
 
@@ -45,9 +44,7 @@ text-align: right;
     text-decoration: none; 
 }
 
-.nav-inactive:hover, .nav-active:hover  {
-    transform: scale(1.1);
-}
+
 
 
 /* -------------------  Responsive ----------------------*/

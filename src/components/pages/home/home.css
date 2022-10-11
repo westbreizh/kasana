@@ -1,39 +1,26 @@
-.body{
-    width: 86%;
-     margin: auto;
-    }
-    
-    .box_list_housings {
-        background-color: #f7f7f7;
-        padding:56px 0 ;
+.box_list_housings {
+    background-color: var(--main-bg-color);
+    padding:56px 4% ;
+    margin-top: 43px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
 
-        margin-top: 43px;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        border-radius: 10px;
+.box_list_housings::after {
+    content: "";
+    flex: 0 0 30%;
     }
-    .box_list_housings::after {
-        content: "";
-        flex: 0 0 30%;
-       
     
-      }
-    
+
 /* -------------------  Responsive ----------------------*/
 
 
 @media screen and (max-width: 576px) {
 
-    .body{
-        width: 90%;
-            margin: auto;
-        }
-
-        .box_list_housings {
-            padding: 0 ;
-            margin-top: 22px;
-        }
-
-
+    .box_list_housings {
+        padding: 0 ;
+        margin-top: 22px;
+    }
 }
