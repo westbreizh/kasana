@@ -1,11 +1,8 @@
-
-
 .info-tags-rating-hostProfil_contenair{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
 }
-
 
 .infos_contenair{
     margin-top: 30px;
@@ -15,7 +12,7 @@
     font-weight: 500;
     font-size: 36px;
     line-height: 142.6%;
-    color: #FF6060;
+    color: var(--main-color);
 }
 
 .housing_location{
@@ -24,8 +21,9 @@
     line-height: 142.6%;
     display: flex;
     align-items: flex-end;
-    color: #FF6060;
+    color: var(--main-color);
 }
+
 
 
 .hostProfil-rating_contenair{
@@ -38,8 +36,8 @@
 
 .collapses_contenair{
     display: flex;
-   flex-direction: row;
-   gap: 75px;
+    flex-direction: row;
+    gap: 75px;
 }
 
 .housing_collapse{
@@ -53,30 +51,49 @@
   /* -------------------  Responsive ----------------------*/
   
   
-    @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
 
-        .body{
-            width: 90%;
-                margin: auto;
-            }
-            .info-tags-rating-hostProfil_contenair{
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-start;
-                align-items: baseline;
-                
-                justify-content: space-between;
-                align-items: flex-end;
-            }
-            .infos_contenair{
-                margin-top: 15px;
-            }
+    .body{
+        width: 90%;
+            margin: auto;
+        }
+
+    .info-tags-rating-hostProfil_contenair{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-end;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .infos_contenair{
+        margin-top: 15px;
+    }
+    
+    .housing_title_image{
+        font-size: 18px;
+    }
+    
+    .housing_location{
+        font-size: 14px;
+    }
+
+    .hostProfil-rating_contenair{
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        height:33px;
+        margin-top:16px;
+    }
             
-            .housing_title_image{
-                font-size: 18px;
-            }
-            
-            .housing_location{
-                font-size: 14px;
-            }
+    .collapses_contenair{
+        display: block;
+       
+    }
+    
+    .housing_collapse{
+        white-space: pre-wrap;
+    }
     }
