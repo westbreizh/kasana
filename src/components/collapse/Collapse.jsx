@@ -26,7 +26,10 @@ export default function Collapse(props) {
             
             </div>
 
-            {isOpen && <div className="collapse_text"> {text} </div>}
+            {isOpen &&
+                <div className="collapse_text_contenair"> 
+                    <p className='collapse_text'>   {text}  </p>
+                </div>}
 
         </div>
                 
