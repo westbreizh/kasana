@@ -19,7 +19,6 @@ nav{
 }
 
 ul{
-
     display:flex;
     justify-content: space-between;
     list-style-type: none;
@@ -27,17 +26,16 @@ ul{
 }
 
 li{
-width: 116px;
-text-align: right;
+    width: 116px;
+    text-align: right;
 }
 
- .nav-active, .nav-inactive{
+.nav-active, .nav-inactive{
     color : #FF6060;
     font-weight: 500;
     font-size: 24px;
     line-height: 142.6%; 
     text-decoration: underline;
-    transition: 0.5s; 
 }
 
 .nav-inactive{
@@ -49,28 +47,27 @@ text-align: right;
 
 /* -------------------  Responsive ----------------------*/
 
-/* --- Breakpoint 768px ---*/
 
 @media screen and (max-width: 576px) {
 
     .header{
-        display: flex;
         height: 47px;
         width : 90%;
         margin-top: 20px;
     }
 
     .logo{
-        height: 47px;
+        height: 43px;
     }
 
     nav{
+        text-transform: uppercase;
         height: 17px;
-        width: 140px;
-        min-width: 50px;
+        width: 50%;
+        min-width: 0px;
     }
 
-    
+
     ul{
         width:100%;
         margin: 0;
@@ -78,7 +75,8 @@ text-align: right;
     }
     
     li{
-    width: 71px;
+    width: 90px;
+    font-size: 12px;
     text-align: right;
     }
 
@@ -86,7 +84,7 @@ text-align: right;
 
     .nav-active, .nav-inactive{
 
-
+        width:72px ;
         font-size: 15px;
         line-height: 17px; 
         margin-left: 10%; 

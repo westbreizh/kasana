@@ -8,7 +8,7 @@ export default function Collapse(props) {
 
   const {title, text} = props
   const [isOpen, setIsOpen] = useState(false)
-    console.log(text)
+
     return (
 
         <div className="collapse_container">

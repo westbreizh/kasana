@@ -53,14 +53,10 @@
 @media screen and (max-width: 576px) {
 
     .carroussel_container{
-
-        height: 255 px;
-        margin-top: 30px ;
-        border-radius: 10px;
+        height: 255px;
+        margin-top: 27px ;
     }
-    
-
-    
+        
     .button_forward{
         position: absolute;
         left: 80%;
@@ -73,14 +69,16 @@
         right: 80%;
         top: 40%;
         color: white;
-        font-size: 100px;
+        font-size: 300px;
     }
     
     .button_forward :hover, .button_backward:ho{
         cursor: pointer;
     }
     
-
+    .caroussel_index{
+     display: none;
+    }
     
 
 }
