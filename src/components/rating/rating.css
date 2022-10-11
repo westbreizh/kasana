@@ -2,7 +2,7 @@
     font-size: large;
 }
 .colorStar{
-    color : #FF6060
+    color : var(--main-color);
 }
 
 .greyStar{

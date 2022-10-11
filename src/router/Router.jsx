@@ -13,14 +13,18 @@ export default function Router() {
   return (
 
     <BrowserRouter> 
+
       <Header />
+
           <Routes>
             <Route path='/home' element={<Home />}  /> 
             <Route path='/housings/:id' element={<Housing />} /> 
             <Route path='/about' element={<About />} />
             <Route path='/*' element={<ErrorPage />} />
           </Routes>
+
         <Footer />
+        
     </BrowserRouter>
 
   )

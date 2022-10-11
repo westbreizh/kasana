@@ -51,15 +51,14 @@
 }
 
 @media screen and (max-width: 576px) {
+
     .housing_box {
-      
         height: 225px;
         width: 100%;
         margin-bottom: 20px;
     }
     
     .housing_title {
-
         position: absolute;
         max-width: 200px;
         left: 5.88%;
@@ -73,6 +72,4 @@
         font-size: 18px;
         line-height: 142.6%;
     }
-
-
 }

@@ -1,7 +1,8 @@
 import Banner from "../../banner/Banner"
 import ListCards from "../../listCards/ListCards"
-import "./home.css"
 import imageBanner from "../../../assets/banner_img_home.png"
+import "./home.css"
+
 
 export default function Home() {
 
@@ -10,7 +11,6 @@ export default function Home() {
  
 
   return (
-
 
       <div className="body">
 
@@ -23,6 +23,5 @@ export default function Home() {
           </div>
 
       </div>
-
-  );
+  )
 }

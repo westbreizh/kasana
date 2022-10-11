@@ -58,18 +58,13 @@
     }
         
     .button_forward{
-        position: absolute;
         left: 80%;
         top: 40%;
-        color: white;
     }
     
     .button_backward{
-        position: absolute;
         right: 80%;
         top: 40%;
-        color: white;
-        font-size: 300px;
     }
     
     .button_forward :hover, .button_backward:ho{

@@ -14,21 +14,24 @@ export default function Header() {
             <img src={logo} alt=" logo de casa" className= "logo" />
 
             <nav>
-            <ul>
-                <li>
-                    <NavLink  to="Home"
-                    className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}>
-                    Accueil
-                    </NavLink>
-                </li>
-                <li>
-                    <NavLink 
-                    to="About"
-                    className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}>
-                        A Propos
-                    </NavLink>
-                </li>
-            </ul>
+                <ul>
+
+                    <li>
+                        <NavLink  to="Home"
+                        className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}>
+                        Accueil
+                        </NavLink>
+                    </li>
+                    
+                    <li>
+                        <NavLink 
+                        to="About"
+                        className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}>
+                            A Propos
+                        </NavLink>
+                    </li>
+                    
+                </ul>
             </nav>
             
         </div>

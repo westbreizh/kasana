@@ -6,7 +6,7 @@
 .tag_contenair{
     width:115px;
     height: 25px;
-    background: #FF6060;
+    background:var(--main-color);
     border-radius: 10px;
     margin-right: 10px;
     display: flex;
@@ -23,8 +23,8 @@
 
   /* -------------------  Responsive ----------------------*/
   
-  
-  @media screen and (max-width: 576px) {
+@media screen and (max-width: 576px) {
+
     .listTags_contenair{
         margin-top: 12px;
     }
@@ -38,5 +38,4 @@
     .tag_text{
         font-size: 10px;
     }
-
-  }
+}

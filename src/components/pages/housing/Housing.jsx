@@ -61,6 +61,7 @@ export default function Housing() {
             }
 
           </div>
+
         </div>
 
         {housingData.equipments&&
@@ -68,7 +69,6 @@ export default function Housing() {
             <Collapse title="Description" text={housingData.description} />
             <Collapse title="Equipements" text={ housingData.equipments.join('\n')} className="housing_collapse"/>
           </div>
-
         }
       
     </div>
