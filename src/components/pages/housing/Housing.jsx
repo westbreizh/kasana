@@ -11,7 +11,7 @@ export default function Housing() {
 
   const { id } = useParams()
   const [housingData, setHousingData] = useState([])
-
+  
   useEffect(() => {
     fetch('../data.json', {
       headers : { 
@@ -66,8 +66,9 @@ export default function Housing() {
         {housingData.equipments&&
           <div className='collapses_contenair'> 
             <Collapse title="Description" text={housingData.description} />
-            <Collapse title="Equipements" text={housingData.equipments} className="housing_collapse"/>
+            <Collapse title="Equipements" text={ housingData.equipments.join('\n')} className="housing_collapse"/>
           </div>
+
         }
       
     </div>

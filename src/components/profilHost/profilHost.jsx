@@ -4,7 +4,6 @@ export default function ProfilHost(props){
 
     const{name, picture}=props
     const nameCuted = name.replaceAll(' ', '\n')
-    console.log(nameCuted)
 return(
     <div className='profilHost_contenair'>
         <div className='profilHost_name'>{nameCuted}</div>
