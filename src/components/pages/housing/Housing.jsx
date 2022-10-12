@@ -67,7 +67,7 @@ export default function Housing() {
         {housingData.equipments&&
           <div className='collapses_contenair'> 
             <Collapse title="Description" text={housingData.description} />
-            <Collapse title="Equipements" text={ housingData.equipments.join('\n')} className="housing_collapse"/>
+            <Collapse title="Equipements" text={ housingData.equipments.join('\n')} />
           </div>
         }
       

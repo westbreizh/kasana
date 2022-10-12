@@ -1,10 +1,26 @@
 .colorStar{
-    font-size: large;
-}
-.colorStar{
+    font-size: 35px !important;
     color : var(--main-color);
 }
 
 .greyStar{
-   color : #E3E3E3 
+    font-size: 35px !important;
+    color : #E3E3E3 
+}
+
+/* -------------------  Responsive ----------------------*/
+
+
+
+@media screen and (max-width: 576px) {
+
+    .colorStar{
+        font-size: 17px !important;
+    }
+    
+    .greyStar{
+        font-size: 17px !important;
+    }
+
+
 }

@@ -31,8 +31,8 @@ function indexAndOne() {
           { lenghtArray>1 &&
 
               <div className="icon_container">
-                  <NavigateBeforeIcon onClick= {() => indexLessOne() } className="button_backward"  sx ={{width:'25%', height:'25%'}} />
-                  <NavigateNextIcon onClick= {() => indexAndOne() } className="button_forward" sx ={{width:'25%', height:'25%'}} />
+                  <NavigateBeforeIcon onClick= {() => indexLessOne() } className="button_backward"   />
+                  <NavigateNextIcon onClick= {() => indexAndOne() } className="button_forward"  />
                   <p className='caroussel_index'>{(index+1) + '/' + lenghtArray}</p>
               </div>
           } 

@@ -1,6 +1,5 @@
 import { useState } from 'react'
-import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown'
-import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
+import CollapseIcon from '@mui/icons-material/NavigateBefore'
 import "./collapse.css"
 
 
@@ -20,8 +19,8 @@ export default function Collapse(props) {
             </div>
 
             {
-            isOpen ? <ArrowDropUpIcon className='collapse-arrow'/>
-            : <ArrowDropDownIcon className='collapse-arrow'/>
+            isOpen ? <CollapseIcon className='collapse-arrow-up'/>
+            : <CollapseIcon className='collapse-arrow-down'/>
             }
             
             </div>

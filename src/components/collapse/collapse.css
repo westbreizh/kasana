@@ -26,11 +26,22 @@
     margin-left: 14%;
 }
 
-.collapse-arrow{
+.collapse-arrow-down{
+    transform: rotateZ(-90deg);
     background: var(--main-color);
     color: #FFFFFF;
-    margin-right: 4%;
+    margin-right: 8px;
+    font-size: 35px !important;
 }
+
+.collapse-arrow-up{
+    transform: rotateZ(90deg);
+    background: var(--main-color);
+    color: #FFFFFF;
+    margin-right: 8px;
+    font-size: 35px !important;
+}
+
 
 .collapse_text_contenair{
     background-color:var(--main-bg-color) ;
@@ -46,7 +57,9 @@ margin-right: 3%;
 margin-top: 0px;
 padding-top: 35px;
 padding-bottom: 50px;
+white-space: pre-line;
 }
+
 
 /* -------------------  Responsive ----------------------*/
 
@@ -70,8 +83,14 @@ padding-bottom: 50px;
         font-size: 13px;
     }
     
-    .collapse-arrow{
-        font-size: 45px;
+    .collapse-arrow-down{
+        margin-right: 5px;
+        font-size: 20px !important;
+    }
+    
+    .collapse-arrow-up{
+        margin-right: 5px;
+        font-size: 20px !important;
     }
     
     .collapse_text{
