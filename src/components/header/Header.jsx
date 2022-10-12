@@ -17,8 +17,8 @@ export default function Header() {
                 <ul>
 
                     <li>
-                        <NavLink  to="Home"
-                        className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")}>
+                        <NavLink  to="/"
+                        className={(nav) => (nav.isActive ? "nav-active" : "nav-inactive")} end>
                         Accueil
                         </NavLink>
                     </li>

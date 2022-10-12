@@ -17,7 +17,8 @@ export default function Router() {
       <Header />
 
           <Routes>
-            <Route path='/home' element={<Home />}  /> 
+
+            <Route exact path='/' element={<Home />}  /> 
             <Route path='/housings/:id' element={<Housing />} /> 
             <Route path='/about' element={<About />} />
             <Route path='/*' element={<ErrorPage />} />
