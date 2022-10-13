@@ -12,7 +12,7 @@
 }
 
 .texte_copiright{
-    color: white;
+    color: var(--second-color);
     text-align: center;
     margin-top: 31px;
     font-weight: 500;
