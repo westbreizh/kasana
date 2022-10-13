@@ -15,7 +15,7 @@ export default function rating (props){
     }
 
     return(
-        <div>
+        <div className='star_contenair'>
             {colorStarNumberArray.map((index) => (
                 <StarIcon key={index} className="colorStar" />))}
             {greyStarNumberArray.map((index) => (

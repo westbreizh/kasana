@@ -18,7 +18,7 @@
     font-weight: 500;
     font-size: 48px;
     line-height: 142.6%;
-    color: white;
+    color: var(--second-color);
     left: 0;
     right: 0;
     text-align: center;

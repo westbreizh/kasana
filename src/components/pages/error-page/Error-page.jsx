@@ -15,7 +15,7 @@ export default function ErrorPage() {
             Oups ! La page que vous demandez n'existe pas.
           </p>
 
-          <NavLink to="/Home"className="error_link">
+          <NavLink to="/"className="error_link">
               Retournez sur la page d'accueil
           </NavLink>
           

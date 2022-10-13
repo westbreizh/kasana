@@ -1,7 +1,11 @@
 :root{
-    --main-bg-color:#F7F7F7;
-    --second-bg-color:#E5E5E5;
-    --main-color: #FF6060; ;
+    --main-bg-color:#E5E5E5;
+    --second-bg-color: #F7F7F7;;
+    --main-color: #FF6060;
+    --second-color: white;
+    background-color: var(--main-bg-color);
+    color : var(--main-color)
+ 
 }
 
 
@@ -17,6 +21,6 @@
 
     .body{
         width: 90%;
-            margin: auto;
+        margin: auto;
         }
 }

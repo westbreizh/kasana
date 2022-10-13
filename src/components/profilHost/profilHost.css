@@ -1,6 +1,7 @@
 .profilHost_contenair{
     display: flex;
     align-items: center;
+    background-color: var(--main-bg-color);
 }
 
 .profilHost_name{
@@ -9,7 +10,6 @@
     line-height: 142.6%;
     text-align: end;
     white-space: pre-wrap;
-    color: var(--main-color);;
     margin-right: 10px;
 }
 
