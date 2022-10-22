@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Carroussel from "../../carroussel/carroussel"
 import ListTags from '../../listTags/listTags';
 import Rating from '../../rating/rating'
@@ -11,8 +12,11 @@ export default function Housing() {
 
   const { id } = useParams()
   const [housingData, setHousingData] = useState([])
+  const navigate = useNavigate()
+
   
   useEffect(() => {
+
     fetch('../data.json', {
       headers : { 
         'Content-Type': 'application/json',
@@ -21,10 +25,12 @@ export default function Housing() {
         .then(res => res.json())
         .then(result => {
          const data = result.find(eltSearched => eltSearched.id === id )
+         if (data !== undefined) {
         setHousingData(data)
+         }else{navigate('/*')}
         })
         .catch((error) => console.log(error));
-    }, [id])
+    }, [id, navigate])
 
   
   return ( 
