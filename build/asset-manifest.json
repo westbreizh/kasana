@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/kasana/static/css/main.5ed507c8.css",
+    "main.js": "/kasana/static/js/main.c52aa673.js",
+    "static/media/banner_img_about.png": "/kasana/static/media/banner_img_about.359f38f0b35fd75e0935.png",
+    "static/media/banner_img_home.png": "/kasana/static/media/banner_img_home.e7ad3a73b524212a2ba1.png",
+    "static/media/banner_img_about_mobile.png": "/kasana/static/media/banner_img_about_mobile.09998aa56962f585ab75.png",
+    "index.html": "/kasana/index.html",
+    "main.5ed507c8.css.map": "/kasana/static/css/main.5ed507c8.css.map",
+    "main.c52aa673.js.map": "/kasana/static/js/main.c52aa673.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ed507c8.css",
+    "static/js/main.c52aa673.js"
+  ]
+}

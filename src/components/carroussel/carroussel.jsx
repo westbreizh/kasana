@@ -22,6 +22,7 @@ function indexAndOne() {
   }
 
 
+  
     return (
 
         <div className="carroussel_container">

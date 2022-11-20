@@ -12,20 +12,19 @@ export default function Router() {
 
   return (
 
-    <BrowserRouter> 
+    <BrowserRouter>
 
       <Header />
 
-          <Routes>
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/housings/:id' element={<Housing />} />
+        <Route path='/about' element={<About />} />
+        <Route path='/*' element={<ErrorPage />} />
+      </Routes>
 
-            <Route path='/' element={<Home />}  /> 
-            <Route path='/housings/:id' element={<Housing />} /> 
-            <Route path='/about' element={<About />} />
-            <Route path='/*' element={<ErrorPage />} />
-          </Routes>
+      <Footer />
 
-        <Footer />
-        
     </BrowserRouter>
 
   )

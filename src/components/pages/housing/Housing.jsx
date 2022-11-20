@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router-dom'
-import { useNavigate } from 'react-router-dom'
+import { useParams, useNavigate } from 'react-router-dom'
 import Carroussel from "../../carroussel/carroussel"
 import ListTags from '../../listTags/listTags';
 import Rating from '../../rating/rating'
 import ProfilHost from '../../profilHost/profilHost';
 import Collapse from '../../collapse/Collapse';
 import "./housing.css"
+
 
 export default function Housing() {
 

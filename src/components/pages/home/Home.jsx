@@ -9,6 +9,7 @@ export default function Home() {
   const altBannerImage = "photo d'une forêt en montagne"
   const textBanner = " Chez vous, partout et ailleurs"
  
+  
 
   return (
 
