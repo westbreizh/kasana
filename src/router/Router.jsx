@@ -12,7 +12,7 @@ export default function Router() {
 
   return (
 
-    <BrowserRouter>
+    <BrowserRouter basename="/kasana">
 
       <Header />
 
